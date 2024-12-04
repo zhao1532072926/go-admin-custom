@@ -35,6 +35,8 @@ func InitRouter() {
 	InitSysRouter(r, authMiddleware)
 
 	// 注册业务路由
+	InitBusinessRouter(r, authMiddleware)
+	
 	// TODO: 这里可存放业务路由，里边并无实际路由只有演示代码
 	InitExamplesRouter(r, authMiddleware)
 }
